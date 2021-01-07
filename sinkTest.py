@@ -4,5 +4,5 @@ import socket
 def handler(obj):
     obj.content()
 
-sinker = Sink(handler, socket.gethostname())
+sinker = Sink(handler, '192.168.0.17')
 sinker.run()

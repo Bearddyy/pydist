@@ -4,7 +4,7 @@ import socket
 class Server():
     def __init__(self, onReceive, port=6969, headersize=10):
         self.onReceive = onReceive
-        self.host = socket.gethostname()
+        self.host = ''
         self.port = port
         self.headersize = headersize
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

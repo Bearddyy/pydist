@@ -14,7 +14,7 @@ class Sink():
         self.theirServer = Sender(self.serverHost, self.serverPort)
 
         # set up receive server
-        self.ourServer = Server(self.onReceive, port=9696)
+        self.ourServer = Server(self.onReceive, port=ourPort)
 
 
     def run(self):
