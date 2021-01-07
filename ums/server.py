@@ -29,6 +29,9 @@ class Server():
                 obj = pickle.loads(message)
 
                 try:
+                    if obj.host == None:
+                        obj.host = address
+
                     self.onReceive(obj)
                 except:
                     print("Error Actioning message")

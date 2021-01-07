@@ -5,11 +5,11 @@ class BasePacket():
             self, 
             action, 
             content=None, 
-            host=socket.gethostbyname(socket.gethostname()), 
+            host=None,
             port=9696,
             name=socket.gethostname()):
         self.action = action
-        self.host = host
+        self.host = host #Populated by the server if None
         self.port = port
         self.content = content
         self.name = name
