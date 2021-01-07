@@ -22,6 +22,6 @@ class Sender():
             self.sock.close()
             print("Message Sent.")
         except:
-            print("Could not connect to {self.host}")
+            print(f"Could not connect to {self.host}")
             print("Please check connection")
         

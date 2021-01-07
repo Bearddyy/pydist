@@ -5,7 +5,7 @@ class BasePacket():
             self, 
             action, 
             content=None, 
-            host='', 
+            host=socket.gethostbyname(socket.gethostname()), 
             port=9696,
             name=socket.gethostname()):
         self.action = action
